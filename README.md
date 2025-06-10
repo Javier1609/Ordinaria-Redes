@@ -108,7 +108,42 @@ Un firewall también puede observar los estados de redes conectadas. Una versió
 
 - Menciona brevemente la función de VPN e IPSec en el aseguramiento de la comunicación.
 
-IPSec es un conjunto de protocolos para mantener seguridad en conexione
+IPSec es un conjunto de protocolos para mantener seguridad en conexiones
+### **Pregunta 6. Cálculo de Direcciones de Subred**
+
+#### a) Primera dirección de subred para `192.168.1.0/26`:
+1. **Bloque**: Los primeros 26 bits definen el bloque. La primera subred es `192.168.1.0/26`.
+
+#### b) Dirección de broadcast de la primera subred:
+1. **Bits de host**: Los últimos 6 bits son para hosts.
+2. **Dirección de broadcast**: Se llenan los bits de host con `1`. La dirección de broadcast es `192.168.1.63`.
+
+---
+
+### **Pregunta 7. División de Redes en Subredes**
+
+#### a) División de la red `10.0.0.0/24` en 8 subredes:
+1. **Bits prestados**: Se necesitan 3 bits para crear 8 subredes (\(2^3 = 8\)).
+2. **Nueva máscara**: La nueva máscara es `/27`.
+
+#### b) Rango de direcciones de la primera subred:
+1. **Primera dirección**: `10.0.0.0`.
+2. **Última dirección válida**: `10.0.0.30`.
+3. **Dirección de broadcast**: `10.0.0.31`.
+
+---
+
+### **Pregunta 8. Cálculo de Direcciones Válidas**
+
+#### a) Dirección válida para la subred `172.16.0.0/20`:
+1. **Rango de direcciones**: Desde `172.16.0.1` hasta `172.16.15.254`.
+2. **Dirección de broadcast**: `172.16.15.255`.
+
+#### b) Número de hosts válidos:
+1. **Bits de host**: 12 bits.
+2. **Hosts válidos**: \(2^{12} - 2 = 4,094\).
+
+---
 ## Parte III: Capa de Red
 
 ### **Pregunta 9. Cálculo de Ruta Más Corta**
