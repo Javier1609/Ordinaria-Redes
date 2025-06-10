@@ -1,4 +1,5 @@
 # Solución del Examen de Redes
+https://github.com/Javier1609/Ordinaria-Redes.git
 ### Pregunta 1
 - Describe brevemente las principales diferencias entre el modelo OSI y el modelo TCP/IP (número de capas, orientación y tratamiento de la capa de aplicación).
 
